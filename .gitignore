@@ -1,0 +1,68 @@
+# ===== Dependências =====
+node_modules/
+jspm_packages/
+
+# ===== Variáveis de ambiente (CRÍTICO - contém secrets) =====
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# ===== Banco de dados local (SQLite do curso) =====
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# ===== Build / Distribuição =====
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Testes / Cobertura =====
+coverage/
+*.lcov
+.nyc_output/
+
+# ===== Caches =====
+.npm/
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
+
+# ===== Editores / IDEs =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# ===== Sistema Operacional =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Uploads / arquivos temporários =====
+uploads/
+tmp/
+temp/
+
+# ===== Chaves e certificados (NUNCA versionar) =====
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
