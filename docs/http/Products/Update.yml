@@ -1,0 +1,22 @@
+info:
+  name: Update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/{{RESOURCE}}/2"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Refrigerante de 2 litros",
+        "price": 21
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
