@@ -52,6 +52,15 @@ export class ProductController {
 
       const { name, price } = bodySchema.parse(request.body);
 
+      const product = await knex<ProductRepository>("products")
+        .select()
+        .where({ id })
+        .first();
+
+      if (!product) {
+        throw new AppError("product Not found");
+      }
+
       await knex<ProductRepository>("products")
         .update({ name, price, updated_at: knex.fn.now() })
         .where({ id });
