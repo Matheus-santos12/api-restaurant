@@ -1,3 +1,4 @@
+import { knex } from "@/database/knex";
 import { NextFunction, Request, Response } from "express";
 import { z } from "zod";
 
@@ -9,6 +10,7 @@ export class ProductController {
       next(error);
     }
   }
+
   async create(request: Request, response: Response, next: NextFunction) {
     try {
       const bodySchema = z.object({
@@ -17,7 +19,10 @@ export class ProductController {
       });
 
       const { name, price } = bodySchema.parse(request.body);
-      return response.status(200).json({ name, price });
+
+      await knex<ProductRepository>("products").insert({ name, price });
+
+      return response.status(200).json();
     } catch (error) {
       next(error);
     }
