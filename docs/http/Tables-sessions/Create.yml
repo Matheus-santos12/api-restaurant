@@ -6,6 +6,12 @@ info:
 http:
   method: POST
   url: "{{BASE_URL}}/{{RESOURCE}}"
+  body:
+    type: json
+    data: |-
+      {
+        "table_id": 143
+      }
   auth: inherit
 
 settings:
