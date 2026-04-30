@@ -1,0 +1,23 @@
+info:
+  name: Create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/{{RESOURCE}}"
+  body:
+    type: json
+    data: |-
+      {
+        "table_session_id": 1,
+        "product_id": 1,
+        "quantity": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
