@@ -11,8 +11,8 @@ http:
     data: |-
       {
         "table_session_id": 1,
-        "product_id": 11,
-        "quantity": 1
+        "product_id": 13,
+        "quantity": 4
       }
   auth: inherit
 
