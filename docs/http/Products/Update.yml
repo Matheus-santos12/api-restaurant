@@ -5,13 +5,13 @@ info:
 
 http:
   method: PUT
-  url: "{{BASE_URL}}/{{RESOURCE}}/2"
+  url: "{{BASE_URL}}/{{RESOURCE}}/16"
   body:
     type: json
     data: |-
       {
-        "name": "Refrigerante de 2 litros",
-        "price": 21
+        "name": "Sorvete de graviola",
+        "price": 15
       }
   auth: inherit
 

@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "table_session_id": 1,
-        "product_id": 13,
-        "quantity": 4
+        "table_session_id": 4,
+        "product_id": 11,
+        "quantity": 2
       }
   auth: inherit
 

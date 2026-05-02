@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/{{RESOURCE}}/table-session/1"
+  url: "{{BASE_URL}}/{{RESOURCE}}/table-session/4"
   auth: inherit
 
 settings:

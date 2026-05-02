@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{BASE_URL}}/{{RESOURCE}}/2"
+  url: "{{BASE_URL}}/{{RESOURCE}}/4"
   auth: inherit
 
 settings:

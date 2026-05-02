@@ -5,7 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/{{RESOURCE}}"
+  url: "{{BASE_URL}}/{{RESOURCE}}?name=sor"
+  params:
+    - name: name
+      value: sor
+      type: query
   auth: inherit
 
 settings:
